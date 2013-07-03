@@ -93,27 +93,63 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*
+@font-face
+{
+font-family: WFMsketchcartoon;
+src:
+     url('../fonts/sketchcarton-webfont.eot'),
+     url('../fonts/sketchcarton-webfont.svg'),
+     url('../fonts/sketchcarton-webfont.ttf'),
+     url('../fonts/sketchcarton-webfont.woff'),
+     ;
+}
+*/
 
-   .wrapper {
-        width:960px;
-        margin: 0 auto;
-   }
+@font-face {
+    font-family: 'WFMsketchcartoon';
+    src: url('../fonts/sketchcarton-webfont.eot');
+    src: url('../fonts/sketchcarton-webfont-webfont.eot') format('embedded-opentype'),
+         url('../fonts/sketchcarton-webfont.woff') format('woff'),
+         url('../fonts/sketchcarton-webfont.ttf') format('truetype'),
+         url('../fonts/sketchcarton-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-   header img { 
-        float: left;
-   }
+body { 
+    background: #464646;
+}
 
-   header h1 {
-        float:left;
-   }
+.wrapper {
+    width:960px;
+    margin: 0 auto;
+}
 
-   #search {
+header {
+    background: #696969;
+    box-shadow: 0 0 15px #000;
+    padding: 0 0 20px 0;
+}
+
+header img { 
+    float: left;
+}
+
+header h1 {
     float:left;
-   }
+    font-family: WFMsketchcartoon;
+    color: white;
+    font-weight: normal;
+}
 
-   #login {
+#search {
+    float:left;
+}
+
+#login {
     float:right;
-   }
+}
 
 
 
